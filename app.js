@@ -9,14 +9,14 @@
     let count = 0;
     let mathmatics = document.querySelector(".mathmatics");
     // console.log(mathmatics.value);
-    if (numInput1.value <= 0) {
-      alert(`number ${numInput1.value} is not valid`);
-    } else {
-      alert(`number ${numInput2.value} is not valid`);
-    }
     if (mathmatics.value === "option") {
       alert("please select a valid option");
-    } else if (mathmatics.value === "add") {
+    } else if (numInput1.value <= 0) {
+      alert(`number ${numInput1.value} is not valid`);
+    } else if (numInput2.value <= 0) {
+      alert(`number ${numInput2.value} is not valid`);
+    }
+    if (mathmatics.value === "add") {
       count = parseInt(numInput1.value) + parseInt(numInput2.value);
       console.log("add", count);
     } else if (mathmatics.value === "subtract") {
